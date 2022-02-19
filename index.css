@@ -1,0 +1,72 @@
+body {
+  background-color: var(--violet-color-light);
+}
+
+.light-txt {
+  color: var(--creamy-color);
+}
+.white-txt {
+  color: var(--white);
+}
+.white-bg {
+  background-color: var(--white);
+}
+.dark-bg {
+  background-color: var(--primary-color);
+}
+
+.nav-logo img {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
+}
+
+.nav-logo {
+  padding: 10px;
+}
+
+.navbar {
+  padding: 5px 30px;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-header {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 100px;
+  column-gap: 30px;
+  height: max-content;
+}
+
+.one {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.two {
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: var(--violet-color);
+}
+.two ol {
+  padding-left: 2rem;
+}
+
+.quiz-content {
+  margin: auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.quiz-cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
