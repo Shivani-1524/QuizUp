@@ -1,0 +1,44 @@
+.quiz-image {
+  width: 100%;
+  height: 18rem;
+  background-color: aqua;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.quiz-page {
+  width: 85%;
+  margin: auto;
+}
+
+.options li {
+  height: max-content;
+  list-style-type: none;
+  padding: 0.7rem;
+  border: 1px solid black;
+  background-color: var(--violet-color-light);
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/* selects all child elements */
+.options *:hover {
+  cursor: pointer;
+}
+
+.options input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.options li label {
+  display: block;
+  text-align: center;
+}
