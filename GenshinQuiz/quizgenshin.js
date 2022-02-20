@@ -2,7 +2,7 @@
 const options = document.querySelectorAll(".options")
 const scoreOutput = document.querySelector(".score")
 const btnQuizSubmit = document.querySelector("#btn-quiz-submit")
-const quizAnswer = [1, 0, 1, 0, 2];
+const quizAnswer = [2, 0, 0, 1, 0];
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
