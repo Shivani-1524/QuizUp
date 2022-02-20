@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizUp</title>
+    <script src="https://kit.fontawesome.com/4a9487b343.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://nifty-tesla-85dda2.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="../quiz.css">
+</head>
+
+<body>
+    <div class="content-container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="../Assets/nav-logo.png" alt="logo" />
+            </div>
+            <div class="nav-items">
+                <a class="nav-link sm-title hide-md" href="index.html">QuizUp</a>
+            </div>
+            <div class="nav-space"></div>
+            <div class="nav-icon-items">
+                <div class="nav-search-bar hide-sm">
+                    <input class="search-bar" type="text" placeholder="Search..">
+                    <i class="fa fa-brands fa-searchengin"></i>
+                </div>
+                <button id="dark-bg-icon" class="btn icon-btn hide-md">
+                    <i class="fa fa-solid fa-user"></i>
+                </button>
+                <button id="dark-bg-icon" class="btn icon-btn hide-md">
+                    <i class="fa fa-solid fa-heart"></i>
+                </button>
+                <button id="dark-bg-icon" class="btn icon-btn show-md">
+                    <i class="fas fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="quiz-title center-items">
+            <h1 class="lg-title new-font gradient-font center-txt">GENSHIN QUIZ</h1>
+        </div>
+
+        <div class="quiz-page">
+            <div class="quiz-container">
+                <p class="rg-title new-font bold mb-20">Question 1.</p>
+                <p class="md-title question mb-20 ml-20">
+                    How many Fatui Harbingers are there?</p>
+                <ul class="options pos-rel dark-txt mg-t-40">
+                    <li class="first solid">
+                        <input type="radio" id="q1-op1" name="q1-ans" />
+                        <label for="q1-op1">8</label>
+                    </li>
+                    <li class="second solid">
+                        <input type="radio" id="q1-op2" name="q1-ans" />
+                        <label for="q1-op2">7</label>
+                    </li>
+                    <li class="third solid">
+                        <input type="radio" id="q1-op3" name="q1-ans" />
+                        <label for="q1-op3">11</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-container">
+                <p class="rg-title new-font bold mb-20">Question 2.</p>
+                <p class="md-title question mb-20 ml-20">
+                    What is the Japanese name of Ningguang?</p>
+                <ul class="options pos-rel dark-txt mg-t-40">
+                    <li class="first solid">
+                        <input type="radio" id="q2-op1" name="q2-ans" />
+                        <label for="q2-op1">Gyoukou</label>
+                    </li>
+                    <li class="second solid">
+                        <input type="radio" id="q2-op2" name="q2-ans" />
+                        <label for="q2-op2">Kouhoy</label>
+                    </li>
+                    <li class="third solid">
+                        <input type="radio" id="2-op3" name="2-ans" />
+                        <label for="q2-op3">Waifu</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-container">
+                <p class="rg-title new-font bold mb-20">Question 3.</p>
+                <p class="md-title question mb-20 ml-20"> What is the name of the Sea Monster that Beidou defeated?</p>
+                <ul class="options pos-rel dark-txt mg-t-40">
+                    <li class="first solid">
+                        <input type="radio" id="q3-op1" name="q3-ans" />
+                        <label for="q3-op1">
+                            Haishan</label>
+                    </li>
+                    <li class="second solid">
+                        <input type="radio" id="q3-op2" name="q3-ans" />
+                        <label for="q3-op2">
+                            Rumple</label>
+                    </li>
+                    <li class="third solid">
+                        <input type="radio" id="q3-op3" name="q3-ans" />
+                        <label for="q3-op3">
+                            Monstr</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-container">
+                <p class="rg-title new-font bold mb-20">Question 4.</p>
+                <p class="md-title question mb-20 ml-20"> How many Nations are there in Teyvat?</p>
+                <ul class="options pos-rel dark-txt mg-t-40">
+                    <li class="first solid">
+                        <input type="radio" id="q4-op1" name="4-ans" />
+                        <label for="q4-op1">5</label>
+                    </li>
+                    <li class="second solid">
+                        <input type="radio" id="q4-op2" name="4-ans" />
+                        <label for="q4-op2">4</label>
+                    </li>
+                    <li class="third solid">
+                        <input type="radio" id="q4-op3" name="q4-ans" />
+                        <label for="q4-op3">7</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="quiz-container">
+                <p class="rg-title new-font bold mb-20">Question 5.</p>
+                <p class="md-title question mb-20 ml-20"> What is the name of the current Grand Master of the Knights of
+                    Favonius?</p>
+                <ul class="options pos-rel dark-txt mg-t-40">
+                    <li class="first solid">
+                        <input type="radio" id="q5-op1" name="q5-ans" />
+                        <label for="q5-op1">Varka</label>
+                    </li>
+                    <li class="second solid">
+                        <input type="radio" id="q5-op2" name="q5-ans" />
+                        <label for="q5-op2">Kraya</label>
+                    </li>
+                    <li class="third solid">
+                        <input type="radio" id="q5-op3" name="q5-ans" />
+                        <label for="q5-op3">My mom</label>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="rg-p score center-txt bold">Your quiz score: </p>
+            <button id="btn-quiz-submit" class="btn primary-btn solid btn-quiz-sbmt">Get Your Scores</button>
+
+        </div>
+    </div>
+
+    <script src="quizgenshin.js"></script>
+
+</body>
+
+</html>
