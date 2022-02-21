@@ -24,7 +24,7 @@
 }
 
 .dark-txt {
-  color: black;
+  color: var(--primary-color);
 }
 
 .new-font {
@@ -72,7 +72,7 @@
   font-weight: 600;
   height: max-content;
   list-style-type: none;
-  padding: 0.7rem;
+  padding: 9px;
   border-radius: 5px;
   margin: auto;
   margin-bottom: 15px;
@@ -115,5 +115,5 @@
 }
 
 .content-container {
-  margin-bottom: 100px;
+  margin-bottom: 7.7rem;
 }
