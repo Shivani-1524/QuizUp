@@ -2,6 +2,10 @@ body {
   background-color: var(--violet-color-light);
 }
 
+a {
+  text-decoration: none;
+}
+
 .light-txt {
   color: var(--creamy-color);
 }
