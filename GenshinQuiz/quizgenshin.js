@@ -13,7 +13,7 @@ scoreOutput.style.display = "none";
 modalTimer.style.display = "none";
 
 window.onload = () => {
-    let timerSeconds = 10;
+    let timerSeconds = 30;
     startTimer(timerSeconds, timerText);
 }
 
@@ -21,8 +21,6 @@ window.onload = () => {
 const startTimer = (duration, display) => {
     let timer = duration, minutes, seconds;
     const startTimerId = setInterval(function () {
-        console.log(timer);
-        // HOW DOES THE TIMER DECREMENT ?
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
