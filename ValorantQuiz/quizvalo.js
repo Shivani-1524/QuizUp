@@ -1,12 +1,13 @@
 const options = document.querySelectorAll(".options")
 const scoreOutput = document.querySelector(".score")
 const btnQuizSubmit = document.querySelector("#btn-quiz-submit")
-
+const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [1, 0, 1, 0, 2];
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
 scoreOutput.style.display = "none";
+resultLink.style.display = "none";
 btnQuizSubmit.addEventListener('click', () => {
     [...options].map((item) => {
         [...item.children].map((option) => {
@@ -26,6 +27,7 @@ btnQuizSubmit.addEventListener('click', () => {
         qnum += 1;
     })
     scoreOutput.style.display = "block";
+    resultLink.style.display = "block";
     scoreOutput.innerHTML = `Your Quiz Score : ${score}`
     btnQuizSubmit.style.display = "none"
 })

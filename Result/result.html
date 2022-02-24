@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizUp</title>
+    <script src="https://kit.fontawesome.com/4a9487b343.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://nifty-tesla-85dda2.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="../quiz.css">
+    <link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../Assets/nav-logo.png" alt="logo" />
+        </div>
+        <div class="nav-items">
+            <a class="nav-link sm-title hide-md" href="index.html">QuizUp</a>
+        </div>
+        <div class="nav-space"></div>
+        <div class="nav-icon-items">
+            <div class="nav-search-bar hide-sm">
+                <input class="search-bar" type="text" placeholder="Search..">
+                <i class="fa fa-brands fa-searchengin"></i>
+            </div>
+            <button id="dark-bg-icon" class="btn icon-btn hide-md">
+                <i class="fa fa-solid fa-user"></i>
+            </button>
+            <button id="dark-bg-icon" class="btn icon-btn show-md">
+                <i class="fas fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <lottie-player class="result-gif" src="https://assets4.lottiefiles.com/packages/lf20_qpxqycif.json"
+        background="transparent" speed="1" autoplay>
+    </lottie-player>
+    <div class="result-container center-items light-txt">
+        <h1 class="lg-title new-font gradient-font">YOUR SCORE IS 5</h1>
+        <div class="stats-container">
+            <p class="md-title new-font center-txt light-grey-txt">Valorant Quiz Stats </p>
+            <p class="md-title mg-t-10 stat">Correct answers <span class="green-txt">3</span></p>
+            <p class="md-title stat">Wrong answers <span class="red-txt">2</span> </p>
+        </div>
+        <a href="../index.html" class="mg-t-20 light-grey-txt">Go Back to Home</a>
+    </div>
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="result.js"></script>
+
+
+</body>
+
+</html>

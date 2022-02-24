@@ -6,6 +6,16 @@
   font-size: 13px;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-respage {
+  display: block;
+  text-align: center;
+}
+
 .gradient-font {
   background: -webkit-linear-gradient(
     var(--blue-gradient),
@@ -21,6 +31,12 @@
 }
 .white-txt {
   color: var(--white);
+}
+.green-txt {
+  color: var(--green-color);
+}
+.red-txt {
+  color: var(--red-color);
 }
 
 .dark-txt {
