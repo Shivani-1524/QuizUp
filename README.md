@@ -10,6 +10,7 @@ The repository contains basic functionality and screens.
  - Home Page - https://hungry-sammet-598965.netlify.app/
  - Game Screen 1 - https://hungry-sammet-598965.netlify.app/valorantquiz/quizvalorant
  - Game Screen 2 - https://hungry-sammet-598965.netlify.app/genshinquiz/quizgenshin
+ - Result Page - https://hungry-sammet-598965.netlify.app/result/result
 
 ## Features
  - Home Page
@@ -19,3 +20,4 @@ The repository contains basic functionality and screens.
  - Result with Answers & Score
  - Search Quiz
  - Display Quiz Score 
+ - Quiz Timer
