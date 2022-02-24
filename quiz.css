@@ -6,6 +6,12 @@
   font-size: 13px;
 }
 
+.quiz-timer {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
 .gradient-font {
   background: -webkit-linear-gradient(
     var(--blue-gradient),
