@@ -12,6 +12,10 @@
   right: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .gradient-font {
   background: -webkit-linear-gradient(
     var(--blue-gradient),
