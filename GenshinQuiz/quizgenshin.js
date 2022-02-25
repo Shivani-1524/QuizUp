@@ -1,13 +1,54 @@
 
-const options = document.querySelectorAll(".options")
-const scoreOutput = document.querySelector(".score")
-const btnQuizSubmit = document.querySelector("#btn-quiz-submit")
+const options = document.querySelectorAll(".options");
+const scoreOutput = document.querySelector(".score");
+const btnQuizSubmit = document.querySelector("#btn-quiz-submit");
+const timeUpSubmit = document.querySelector("#time-up-submit");
+const modalTimer = document.getElementById("modal-wrapper");
+const timerText = document.getElementById("timer-txt");
 const quizAnswer = [2, 0, 0, 1, 0];
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
 scoreOutput.style.display = "none";
+modalTimer.style.display = "none";
+
+window.onload = () => {
+    let timerSeconds = 30;
+    startTimer(timerSeconds, timerText);
+}
+
+
+const startTimer = (duration, display) => {
+    let timer = duration, minutes, seconds;
+    const startTimerId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            modalTimer.style.display = "flex"
+            clearInterval(startTimerId)
+        }
+    }, 1000);
+}
+
+timeUpSubmit.addEventListener('click', () => {
+    modalTimer.style.display = "none";
+    btnQuizSubmit.style.display = "none"
+    calcScore();
+})
+
+
 btnQuizSubmit.addEventListener('click', () => {
+    btnQuizSubmit.style.display = "none"
+    calcScore();
+})
+
+const calcScore = () => {
     [...options].map((item) => {
         [...item.children].map((option) => {
             option.style.backgroundColor = "var(--light-grey)"
@@ -27,5 +68,4 @@ btnQuizSubmit.addEventListener('click', () => {
     })
     scoreOutput.style.display = "block";
     scoreOutput.innerHTML = `Your Quiz Score : ${score}`
-    btnQuizSubmit.style.display = "none"
-})
+}
