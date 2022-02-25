@@ -5,10 +5,15 @@ const btnQuizSubmit = document.querySelector("#btn-quiz-submit");
 const timeUpSubmit = document.querySelector("#time-up-submit");
 const modalTimer = document.getElementById("modal-wrapper");
 const timerText = document.getElementById("timer-txt");
+const options = document.querySelectorAll(".options")
+const scoreOutput = document.querySelector(".score")
+const btnQuizSubmit = document.querySelector("#btn-quiz-submit");
+const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [2, 0, 0, 1, 0];
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
+resultLink.style.display = "none";
 scoreOutput.style.display = "none";
 modalTimer.style.display = "none";
 
@@ -68,4 +73,7 @@ const calcScore = () => {
     })
     scoreOutput.style.display = "block";
     scoreOutput.innerHTML = `Your Quiz Score : ${score}`
+    btnQuizSubmit.style.display = "none"
+    resultLink.style.display = "block";
 }
+

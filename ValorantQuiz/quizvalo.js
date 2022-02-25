@@ -7,6 +7,7 @@ const timerText = document.getElementById("timer-txt");
 scoreOutput.style.display = "none";
 modalTimer.style.display = "none";
 
+const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [1, 0, 1, 0, 2];
 let optNumber = 0;
 let qnum = 0;
@@ -48,6 +49,7 @@ timeUpSubmit.addEventListener('click', () => {
 })
 
 
+resultLink.style.display = "none";
 btnQuizSubmit.addEventListener('click', () => {
     btnQuizSubmit.style.display = "none"
     calcScore();
@@ -72,5 +74,6 @@ const calcScore = () => {
         qnum += 1;
     })
     scoreOutput.style.display = "block";
+    resultLink.style.display = "block";
     scoreOutput.innerHTML = `Your Quiz Score : ${score}`
 }

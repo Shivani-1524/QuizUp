@@ -1,0 +1,29 @@
+body {
+  background-color: var(--primary-color);
+}
+
+.result-container {
+  width: 100%;
+  height: calc(100% - 100px);
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-gif {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 90%;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-container {
+  width: 20%;
+}
