@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+* {
+  font-family: "Inter", sans-serif;
+}
+
 .light-txt {
   color: var(--creamy-color);
 }
@@ -31,6 +35,11 @@ a {
 
 .navbar {
   padding: 5px 2.3rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-container {

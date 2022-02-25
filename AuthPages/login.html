@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizUp</title>
+    <script src="https://kit.fontawesome.com/4a9487b343.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://nifty-tesla-85dda2.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../Assets/nav-logo.png" alt="logo" />
+        </div>
+        <div class="nav-items">
+            <a class="nav-link sm-title hide-md" href="../index.html">QuizUp</a>
+        </div>
+        <div class="nav-space"></div>
+        <div class="nav-icon-items">
+            <div class="nav-search-bar hide-sm">
+                <input class="search-bar" type="text" placeholder="Search..">
+                <i class="fa fa-brands fa-searchengin"></i>
+            </div>
+            <a href="login.html">
+                <button id="dark-bg-icon" class="btn icon-btn hide-md">
+                    <i class="fa fa-solid fa-user"></i>
+                </button>
+            </a>
+            <button id="dark-bg-icon" class="btn icon-btn show-md">
+                <i class="fas fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="auth-container center-items">
+        <div class="auth-card">
+            <p class="md-title center-txt">Log In</p>
+            <div class="mg-t-20">
+                <label class="input-label sm-title" for="name">Email</label>
+                <input class="user-input" id="name" type="email" placeholder="Enter email address" />
+            </div>
+            <div class="mg-t-10">
+                <label class="input-label sm-title" for="password">Password</label>
+                <input class="user-input" id="password" type="password" placeholder="6+ characters" />
+            </div>
+            <div class="flex-between mg-t-20">
+                <div class="check-container">
+                    <input type="checkbox" id="rememberme" for="rememberme">
+                    <label for="rememberme">Remember me</label>
+                </div>
+                <p class="orange-txt forgot-pswd">Forgot Your Password?</p>
+            </div>
+            <a href="index.html">
+                <button class="btn primary-btn solid mg-t-20">
+                    Log In
+                </button>
+            </a>
+            <a href="signup.html">
+                <button class="btn warning-outlined-btn mg-t-10">
+                    New User? Sign Up
+                </button>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
