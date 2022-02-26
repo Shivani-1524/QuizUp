@@ -7,7 +7,7 @@ const modalTimer = document.getElementById("modal-wrapper");
 const timerText = document.getElementById("timer-txt");
 const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [2, 0, 0, 1, 0];
-var startTimerId;
+let startTimerId;
 let optNumber = 0;
 let qnum = 0;
 let score = 0;

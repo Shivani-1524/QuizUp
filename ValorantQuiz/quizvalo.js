@@ -6,6 +6,7 @@ const modalTimer = document.getElementById("modal-wrapper");
 const timerText = document.getElementById("timer-txt");
 const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [1, 0, 1, 0, 2];
+let startTimerId;
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
@@ -24,7 +25,7 @@ window.onload = () => {
 const startTimer = (duration, display) => {
     console.log("hi")
     let timer = duration, minutes, seconds;
-    const startTimerId = setInterval(function () {
+    startTimerId = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
