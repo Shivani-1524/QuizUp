@@ -4,14 +4,14 @@ const btnQuizSubmit = document.querySelector("#btn-quiz-submit")
 const timeUpSubmit = document.querySelector("#time-up-submit");
 const modalTimer = document.getElementById("modal-wrapper");
 const timerText = document.getElementById("timer-txt");
-scoreOutput.style.display = "none";
-modalTimer.style.display = "none";
-
 const resultLink = document.querySelector(".link-respage");
 const quizAnswer = [1, 0, 1, 0, 2];
 let optNumber = 0;
 let qnum = 0;
 let score = 0;
+scoreOutput.style.display = "none";
+modalTimer.style.display = "none";
+resultLink.style.display = "none";
 scoreOutput.style.display = "none";
 
 
@@ -49,10 +49,11 @@ timeUpSubmit.addEventListener('click', () => {
 })
 
 
-resultLink.style.display = "none";
+
 btnQuizSubmit.addEventListener('click', () => {
-    btnQuizSubmit.style.display = "none"
+    btnQuizSubmit.style.display = "none";
     calcScore();
+    clearInterval(startTimerId);
 })
 
 const calcScore = () => {
