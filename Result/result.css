@@ -27,3 +27,8 @@ body {
 .stats-container {
   width: 20%;
 }
+
+.fab.bottom-left {
+  bottom: 20px;
+  right: 20px;
+}
